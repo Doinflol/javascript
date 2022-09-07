@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(45deg, rgb(28, 161, 250), rgb(20, 0, 134) );
+    background: linear-gradient(75deg, rgb(28, 161, 250), rgb(20, 0, 134));
     background-attachment: fixed;
     font: normal 15pt Arial;
 }
@@ -13,9 +13,22 @@ section {
     background: linear-gradient(45deg, white, gray) ;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 50%;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+}
+
+@media only screen and (max-width: 700px) {
+    section {
+        width: 70%;
+        padding: 5%;
+    }
+}
+
+#res {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
 div {
