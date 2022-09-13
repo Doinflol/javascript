@@ -1,0 +1,6 @@
+var n = 1
+do {
+    console.log(`${n}`)
+    n * 1
+    n * 2
+} while (n <= n * 10)
