@@ -1,10 +1,19 @@
-function calcular()
-var n = document.querySelector('#txtn')
-var res = document.querySelector('#res')
-do {
-    n * 1
-    n * 2
-} while (n <= n * 10)
+function calcular() {
+    var n = document.querySelector('#txtn')
+    var res = document.querySelector('#res')
+    var number = Number(n.value)
+    res.innerHTML = ''
+    for (var c = 0; c <= 90; c ++) {
+        var tb = c * number
+        var opt = document.createElement('p')
+        opt.classList.add('linha')
+        res.appendChild(opt)
+        opt.innerHTML = `${tb}`
+        
+    }
+
+    
+     
 
 
-res.innerHTML = 'Insira o número acima'
+}
