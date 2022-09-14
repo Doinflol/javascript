@@ -1,19 +1,18 @@
-function calcular() {
-    var n = document.querySelector('#txtn')
-    var res = document.querySelector('#res')
-    var number = Number(n.value)
-    res.innerHTML = ''
-    for (var c = 0; c <= 90; c ++) {
-        var tb = c * number
-        var opt = document.createElement('p')
-        opt.classList.add('linha')
-        res.appendChild(opt)
-        opt.innerHTML = `${tb}`
-        
+function tabuada () {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if (num.value.length == 0) {
+        window.alert('Por favor, digite um número')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while (c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
     }
-
-    
-     
-
-
 }
