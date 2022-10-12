@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(75deg ,rgb(83, 83, 255), blue);
+    background-attachment: fixed;
+    font: normal 15px Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+}
+
+#seltab {
+    width: 150px;
+}
+
+#final {
+    margin-top: 10px;
+}
+
+#bot {
+    float: right;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

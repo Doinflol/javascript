@@ -5,13 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${fileDirname}/index.html",
+            "runtimeExecutable": "D:\\Google\\Chrome\\Application\\chrome.exe"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\aula14\\ambiente.js"
+            "program": "${file}"
         }
     ]
 }
